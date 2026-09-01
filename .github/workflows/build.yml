@@ -4,7 +4,7 @@ jobs:
   linux:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v7
     - run: sudo apt-get install musl-tools
     - run: make linux
     - uses: svenstaro/upload-release-action@v2
@@ -16,7 +16,7 @@ jobs:
   windows:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v7
     - run: make windows
     - uses: svenstaro/upload-release-action@v2
       with:
@@ -27,7 +27,7 @@ jobs:
   macos:
     runs-on: macos-latest
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v7
     - run: make macos
     - uses: svenstaro/upload-release-action@v2
       with:
