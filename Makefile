@@ -1,6 +1,6 @@
 CWD ?= $(realpath $(CURDIR))
 PROJ = mongoose/tutorials/http/http-server
-VERSION ?= 7.20
+VERSION ?= 7.23
 
 all: linux macos windows
 
